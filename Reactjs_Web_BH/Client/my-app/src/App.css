@@ -1,0 +1,238 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.header {
+  height: 70px;
+  background: black;
+}
+.footer {
+  height: 500px;
+  background: black;
+  color: white;
+}
+.menu ul {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+}
+.menu li {
+  display: inline-block;
+  padding: 20px;
+}
+.menu a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  font-size: 20px;
+}
+#login {
+  font-size: 16px;
+}
+.menu ul li a {
+  position: relative;
+}
+.menu ul li a span {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  background: #c8ff0b;
+  transition: transform ease-in-out 0.5s;
+  width: 50%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition-delay: 0s;
+}
+.menu ul li a:hover span {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.menu2 a {
+  position: relative;
+  text-decoration: none;
+}
+.menu2 ul {
+  list-style: none;
+}
+.menu2 ul li a span {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  background: white;
+  transition: transform ease-in-out 0.5s;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition-delay: 0s;
+}
+.menu2 ul li a:hover span {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.cardfooter {
+  margin-top: 100px;
+  border-top: black;
+}
+.cardfooter .card-footer {
+  background: black;
+  border-top: 1px solid white;
+}
+.cardfooter .card-body {
+  height: 300px;
+  background: black;
+}
+/* 
+List Product */
+
+.banner {
+  background: white;
+  height: 200px;
+}
+.contentleft {
+  background: white;
+}
+.contentright {
+  background: white;
+  height: 1000px;
+}
+.a {
+  font-size: 70px;
+}
+.funcontentleft {
+  height: 70px;
+  background: white;
+}
+.show {
+  float: left;
+  padding-top: 25px;
+  margin: 0px;
+}
+.dropdown {
+  height: 50px;
+  background: white;
+  color: black;
+}
+.pic {
+  background: white;
+}
+.menu3 a {
+  position: relative;
+  text-decoration: none;
+}
+.menu3 ul {
+  list-style: none;
+}
+  .menu3 ul li a span {
+      position: absolute;
+      bottom: 0;
+      display: block;
+      background: black;
+      transition: transform ease-in-out 0.5s;
+      width: 100%;
+      height: 1px;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition-delay: 0s;
+  }
+  .menu3 ul li a:hover span {
+      transform: scaleX(1);
+      transform-origin: left;
+  }
+.menuProductMax a {
+  position: relative;
+  color: black;
+}
+.menuProductMax ul {
+  list-style: none;
+}
+.picturebanner {
+  overflow: hidden;
+}
+  .picturebanner img {
+      width: 100%;
+      transition: all 1s;
+  }
+  .picturebanner:hover img {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+  }
+.img-fluid {
+  z-index: 4;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+.img-top:hover .caption {
+  opacity: 1;
+  transform: translateY(-100px);
+  -webkit-transform: translateY(-120px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+}
+.caption {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  top: 300px;
+  left: 30px;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.blur {
+  background-color: black;
+  height: 80px;
+  width: 260px;
+  z-index: 5;
+  position: absolute;
+}
+.caption-text p {
+  color: white;
+}
+.caption-text {
+  z-index: 8;
+  position: relative;
+}
+.show {
+  padding-top: 0;
+  float: none;
+  display: inline-block !important;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

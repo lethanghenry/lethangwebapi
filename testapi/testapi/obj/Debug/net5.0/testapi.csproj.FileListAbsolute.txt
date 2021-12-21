@@ -270,3 +270,10 @@ D:\thang\testapi\testapi\obj\Debug\net5.0\testapi.dll
 D:\thang\testapi\testapi\obj\Debug\net5.0\ref\testapi.dll
 D:\thang\testapi\testapi\obj\Debug\net5.0\testapi.pdb
 D:\thang\testapi\testapi\obj\Debug\net5.0\testapi.genruntimeconfig.cache
+D:\thang\testapi\testapi\bin\Debug\net5.0\Azure.Core.dll
+D:\thang\testapi\testapi\bin\Debug\net5.0\Microsoft.Graph.dll
+D:\thang\testapi\testapi\bin\Debug\net5.0\Microsoft.Graph.Core.dll
+D:\thang\testapi\testapi\bin\Debug\net5.0\System.Memory.Data.dll
+D:\thang\testapi\testapi\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+D:\thang\testapi\testapi\bin\Debug\net5.0\System.Text.Encodings.Web.dll
+D:\thang\testapi\testapi\bin\Debug\net5.0\System.Text.Json.dll

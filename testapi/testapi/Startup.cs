@@ -20,6 +20,7 @@ namespace testapi
 {
     public class Startup
     {
+       
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -39,22 +40,19 @@ namespace testapi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "testapi", Version = "v1" });
             });
-            // Cors
-            //var origins = Configuration["AllowOrigins"].ToObject<string[]>();
-
-            //services.AddCors(options =>
-            //{
-            //    options.AddPolicy("MyPolicy", builder =>
-            //    {
-            //        builder.WithOrigins(origins)
-            //        .AllowAnyHeader()
-            //        .AllowAnyMethod()
-            //        .AllowCredentials();
-            //    });
-            //});
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:3000/");
+                    }
+                    );
+            });
+            services.AddControllers();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -67,6 +65,7 @@ namespace testapi
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseCors();
 
             app.UseAuthorization();
 
@@ -74,6 +73,8 @@ namespace testapi
             {
                 endpoints.MapControllers();
             });
+          
+     
         }
        
     }
