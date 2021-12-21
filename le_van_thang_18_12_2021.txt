@@ -1,0 +1,4 @@
+1. Những việc đã làm
+	- Hoàn thành API
+2. Khó Khăn
+	-Template Admin LTE
